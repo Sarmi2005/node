@@ -1,0 +1,134 @@
+/* Basic reset for margin and padding */
+body, ul, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    background-color: #2e2e2e; /* Dark grey background for a rugged look */
+    color: #e0e0e0; /* Light grey text color for good contrast */
+    font-family: 'Verdana', sans-serif; /* Robust font for a rugged feel */
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background-color: #1c1c1c; /* Very dark grey background */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Use flexbox to center items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 60px; /* Adjust height as needed */
+    background-color: #333333; /* Slightly lighter dark grey for contrast */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Add shadow for a solid effect */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light grey text color for contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    font-size: 18px; /* Adjust font size as needed */
+    display: block;
+    padding: 15px 20px; /* Add padding for better click area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    background-color: #444444; /* Darker grey background on hover */
+    color: #f0f0f0; /* Light grey text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Page Container and Grid Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between grid items */
+}
+
+/* Sections */
+section {
+    background: #3a3a3a; /* Dark grey background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4); /* More pronounced shadow for depth */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #d4a66d; /* Warm tan color for headings */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em; /* Larger size for main headings */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+/* Paragraphs */
+p {
+    color: #b0b0b0; /* Medium grey for paragraph text */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #d4a66d; /* Warm tan button background */
+    color: #1c1c1c; /* Very dark grey button text */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #b57b4d; /* Darker tan on hover */
+    color: #1c1c1c; /* Dark grey text color on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c; /* Very dark grey background */
+    color: #e0e0e0; /* Light grey text color */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.5); /* Light shadow for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Stack menu items vertically */
+    }
+}
